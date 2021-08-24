@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Bootstrap</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .espsec {
+            margin: 100px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Crie uma pagina sobre "bootstrap" seguindo os seguintes critérios:
+    1. A visualização da página deve ser mantida para Telas com tamanho maior ou igual a 768px;
+    2. você deve incluir uma tabela com números, estimativas... (fictício ou não), apenas para praticarmos as classes de tabelas ;)
+    3. Deve conter um formato de lista que exiba em uma nova guia(tab) parágrafos tratando sobre o assunto.
+    4. No texto apresentado na guia do item 3, vc deve deixar o texto justificado.
+    5. No ultimo paragrafo, vc deve colocar todas as primeiras letras de cada palavra em maiúsculo.
+    6. Crie também uma lista instruindo ao usuário o que cada aviso do texto corresponde. Exemplo:
+       - vermelho - atenção vc ja está nesta pagina por muito tempo.
+       - amarelo - você precisa descançar... -->
+
+
+<header class="container">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal"><img src="images/bootstrap-logo.png"></h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+          <a class="p-2 text-dark" href="#o-que-e">O que é</a>
+          <a class="p-2 text-dark" href="#arquivos">Arquivos Primários</a>
+          <a class="p-2 text-dark" href="#dicas">Dicas</a>
+        </nav>
+      </div>
+</header>
+
+    <section id="o-que-e" class="espsec">
+        <div class="container mx-auto text-center">
+            <h1 class="text-center mb-5">O Que é Bootstrap? Guia para Iniciantes</h1>
+            <img class="img-responsive" src="images/saiba-mais-sobre-bootstrap.png">
+            <p class="espsec"></p>
+            <p class="text-left">Você é um desenvolvedor front-end e está cansado de escrever sempre as mesmas sintaxes CSS? Essa é a sua deixa para começar a usar o Bootstrap! Neste artigo, vamos cobrir os benefícios de usar esse framework para web e como fazer para incorporá-lo no seu projeto corretamente.</p>
+        <p class="text-left">o Bootstrap esta entre os 3 frameworks mais utilizados no mundo. Veja abaixo a lista deles:</p>
+        <p class="espsec"></p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Franmeword</th>
+                    <th>Lançado em</th>
+                    <th>Sites que usam</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Bootstrap</td>
+                    <td>2011</td>
+                    <td>7 milhões</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Angular.js</td>
+                    <td>2011</td>
+                    <td>5.8 milhões</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Vue.js</td>
+                    <td>2014</td>
+                    <td>4.9 milhões</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Dados de Junho/2019</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    </section>
+
+
+    <section id="arquivos" class="bg-light">
+
+
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                
+
+                <h2>Os 3 Arquivos Primários do Bootstrap</h2>
+
+                <p>Como o Bootstrap consiste em uma coleção de sintaxes que desempenham funções específicas, ele só faz
+                    sentido quando o framework tem diferentes tipos de arquivos consigo.
+                    Abaixo estão os 3 tipos de arquivos primários que gerenciam a interface de usuário e a
+                    funcionalidade de um site. </p>
+
+
+
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                            role="tab" aria-controls="v-pills-home" aria-selected="true">Bootstrap.css</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                            role="tab" aria-controls="v-pills-profile" aria-selected="false">Bootstrap.js</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                            role="tab" aria-controls="v-pills-messages" aria-selected="false">Glyphicons</a>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <p>Por conta das suas funções, o CSS permite criar um visual uniforme em quantas páginas e
+                                do jeito que você quiser. Diga adeus às horas de edição manual só para mudar a largura
+                                de uma borda numa linha.</p>
+                            <p>Com CSS, tudo o que você precisa fazer é referenciar as páginas web no arquivo CSS.
+                                Qualquer alteração necessária pode ser feita nesse mesmo arquivo sozinho.</p>
+                            <p>As funções do CSS não são limitadas a estilo de texto. Eles também podem ser usados para
+                                outros aspectos de uma página, como a disposição dos elementos e de imagens e também
+                                tabelas. </p>
+                            <p>Como o CSS tem muitas declarações e seletores, memorizar todos eles pode levar algum
+                                tempo. Sabemos que você está sedento para começar; então, fique com essa listagem de
+                                códigos CSS prontos para encurtar o processo de aprendizado. </p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <p>O arquivo Bootstrap.js é a parte central do Bootstrap. Ele consiste em arquivos
+                                JavaScript, responsáveis pela interatividade de um site.</p>
+                            <p>Para poupar tempo em sempre terem que escrever sintaxes de JavaScript, os desenvolvedores
+                                tendem a usar jQuery. Essa é uma plataforma de código-aberto popular que permite
+                                adicionar várias funcionalidades em um site. </p>
+                            <p>Abaixo temos alguns exemplos do que o jQuery pode fazer:
+                                <ul>
+                                    <li>Executar funções Ajax, como remover dados de outros locais e de forma dinâmica;
+                                    </li>
+                                    <li>Criar widgets usando uma coleção de plugins JavaScript;</li>
+                                    <li>Criar animações personalizadas usando propriedades do CSS;</li>
+                                    <li>Adicionar dinamismo e interatividade aos conteúdos de um site.</li>
+                                </ul>
+                            </p>
+                            <p>Mesmo que um Bootstrap com propriedades CSS e elementos HTML funcione bem, ele
+                                precisa do jQuery para criar um design responsivo. Caso contrário, você vai poder
+                                usar apenas as partes estáticas e inativas do CSS.</p>
+                            <p>Precisa de mais informação? Acesse este artigo e aprenda mais sobre jQuery!</p>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                            aria-labelledby="v-pills-messages-tab">
+                            <p class="text-justify">Ícones são uma parte integral do front-end de um site. Eles são
+                                frequentemente associados
+                                com certos tipos de ações e dados disponíveis na interface do usuário. E o Bootstrap usa
+                                os Glyphicons para preencher essa necessidade. </p>
+                            <p class="text-justify">O Bootstrap já tem vários símbolos Glyphicons gratuitos já
+                                desbloqueados para usar desde
+                                o começo. A versão gratuita dele tem um visual padrão, mas dá conta do recado para as
+                                funções mais essenciais. </p>
+                            <p> class="text-justify"Se você quer encontrar ícones mais estilosos, o Glyphicons vende
+                                vários conjuntos de
+                                ícones premium que, com certeza, vão fazer com que sites de nichos mais específicos
+                                tenham um visual deslumbrante. </p>
+                            <p class="text-justify">Se quiser, também é possível fazer download de ícones baseados em
+                                temas específicos. E
+                                sem gastar nada. Eles estão disponíveis em sites como Flaticon, GlyphSearch e Icons8.
+                            </p>
+                            <p class="text-justify text-capitalize">Alguns desses ícones podem ser afetados pelo CSS
+                                para que tenha designs diferentes,
+                                enquanto outros podem permanecer dna forma padrão. O mais indicado é usar aqueles que
+                                mais se encaixam com a proposta e as necessidades do seu site. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="espsec" id="dicas" >
+        <div class="container">
+        
+        <h2>Algumas dicas importantes sobre o Boostratp</h2>
+        
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Classe</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr class='table-success'>
+                  <td>.table-success</td>
+                  <td>Pode ser usado sem moderação</td>
+                </tr>
+                <tr class='table-primary'>
+                  <td>.table-primary</td>
+                  <td>Enquanto estiver codando com o Bootstrap, que tal um TNT Energy para acompanhar?</td>
+                </tr>
+                <tr class='table-info'>
+                  <td>.table-info</td>
+                  <td>elementos incríveis com simples linhas de comando</td>
+                </tr>
+                <tr class='table-warning'>
+                  <td>.table-warning</td>
+                  <td>Alguns dizem que temos uma curva de aprendizagem, mas depois que aprendemos......</td>
+                </tr>
+                <tr class='table-secondary'>
+                  <td>.table-secondary</td>
+                  <td>O trabalho flui muito mais rápido pois permite a personalização dos estilos pré-definidos</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
+    </script>
+    <script src="js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+</body>
+
+</html>
