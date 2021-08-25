@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Bootstrap</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #013A40;
+        }
+
+        header {
+            background: #013A40;
+        }
+
+        .espsec {
+            margin: 100px 0;
+        }
+
+        .input-group-text {
+background: #013A40;
+color: #FFF !important;
+}
+
+
+
+        .btn.btn-lg.btn-block {
+            background: #013A40;
+            color: #FFF;
+            border: 2px solid #013A40;
+        }
+
+        .btn.btn-lg.btn-block:hover {
+            background: #025959;
+            border: 2px solid #013A40;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="wraper">
+        <header>
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3">
+                    <h5 class="my-0 mr-md-auto font-weight-normal"><img src="images/bootstrap-logo.png"></h5>
+                    <nav class="my-2 my-md-0 mr-md-3">
+                        <a class="p-2 text-white text-uppercase" href="#">Sobre a Empresa</a>
+                        <a class="p-2 text-white text-uppercase" href="#">Serviços</a>
+                        <a class="p-2 text-white text-uppercase" href="#">Contato</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="bg-contact"></div>
+        </header>
+
+
+
+        <section class="espsec">
+            <div class="container mx-auto">
+                <h1 class="text-center mb-5">Formulário de Cadastro</h1>
+                <div class="col-md-12">
+                    <form class="needs-validation">
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="nome">Nome</label>
+                                    </div>
+                                <input type="text" class="form-control" id="nome">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="email">@</label>
+                                    </div>
+                                <input type="email" id="email" class="form-control" placeholder="E-mail">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="senha"><i class="fa fa-eye-slash" aria-hidden="true"></i></label>
+                                    </div>
+                                <input type="password" id="senha" class="form-control" placeholder="Senha">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="endereco">Endereço</label>
+                                </div>
+                                <input type="text" class="form-control" id="endereco">
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5 mb-3">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="cidade">cidade</label>
+                                    </div>
+                                    <input type="text" class="form-control" id="cidade">
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="estado">Estado</label>
+                                    </div>
+                                    <select class="custom-select" id="estado">
+                                        <option selected>Escolher...</option>
+                                        <option value="">Escolha...</option>
+                                        <option>Acre</option>
+                                        <option>Alagoas</option>
+                                        <option>Amapá</option>
+                                        <option>Amazonas</option>
+                                        <option>Bahia</option>
+                                        <option>Ceará</option>
+                                        <option>Espírito Santo</option>
+                                        <option>Goiás</option>
+                                        <option>Maranhão</option>
+                                        <option>Mato Grosso</option>
+                                        <option>Mato Grosso do Sul</option>
+                                        <option>Minas Gerais</option>
+                                        <option>Pará</option>
+                                        <option>Paraíba</option>
+                                        <option>Paraná</option>
+                                        <option>Pernambuco</option>
+                                        <option>Piauí</option>
+                                        <option>Rio de Janeiro</option>
+                                        <option>Rio Grande do Norte</option>
+                                        <option>Rio Grande do Sul</option>
+                                        <option>Rondônia</option>
+                                        <option>Roraima</option>
+                                        <option>Santa Catarina</option>
+                                        <option>São Paulo</option>
+                                        <option>Sergipe</option>
+                                        <option>Tocantins</option>
+                                    </select>
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <label class="input-group-text" for="cep">cep</label>
+                                    </div>
+                                    <input type="text" class="form-control" id="cep">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+                        <button class="btn btn-lg btn-block" type="submit">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
+    </script>
+    <script src="js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
+</script>
+<script src="js/bootstrap.bundle.min.js">
+</script>
+<script src="js/bootstrap.min.js">
+</script>
+</body>
+
+</html>
